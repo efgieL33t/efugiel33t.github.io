@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <!-- <meta name="viewport" content="width=device-width,initial-scale=1" /> スマホ表示に対応させる(レスポンシブデザイン)-->
+    <title>/pチャット、/eチャット変換</title>
+    <meta name="description" content="/pチャットを/eチャットに変換するツールです。" />
+    <link rel="stylesheet" href="./ffxivMacroPtoE.css" />
+    <link rel="stylesheet" href="../header.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="header-logo">
+        <a href="../index.html">FFXIV用ツールまとめ</a>
+      </div>
+      <div class="header-list">
+        <p>その他のツール ▼</p>
+        <ul class="dropdown-list">
+          <li>
+            <a href="#">/p ↔ /e 相互変換</a>
+            <a href="../ffxivMacroPtoE/ffxivMacroPtoE.html"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="main">
+      <div class="description">
+        <h1>partyチャット、echoチャット相互変換ツール</h1>
+        <p>入力エリアにマクロを貼り付け、対応するボタンを押してください。</p>
+        <p>定型文には対応しておりません。</p>
+        <p>高難易度用マクロを自分だけで見たい際などにどうぞ！</p>
+      </div>
+      <div class="container">
+        <div class="box box-left">
+          <p>partyチャット</p>
+          <textarea id="partyChat" placeholder="/p 〇〇〇"></textarea>
+        </div>
+        <div class="box box-center">
+          <input id="ptoeButton" type="submit" value=" /p から /e に変換 " />
+          <p>→</p>
+          <br /><br /><br /><br />
+          <p>←</p>
+          <input id="etopButton" type="submit" value=" /e から /p に変換 " />
+        </div>
+        <div class="box box-right">
+          <p>echoチャット</p>
+          <textarea id="echoChat" placeholder="/e 〇〇〇"></textarea>
+        </div>
+      </div>
+    </div>
+    <script src="./ffxivMacroPtoE.js"></script>
+  </body>
+</html>
