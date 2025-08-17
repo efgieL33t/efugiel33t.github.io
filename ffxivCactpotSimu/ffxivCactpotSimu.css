@@ -31,7 +31,7 @@ body {
 .container {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 10px;
   padding: 40px 0px;
   margin: 0 auto;
 }
@@ -42,11 +42,13 @@ ul {
 
 .score-box {
   display: flex;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 .score-title {
   text-align: center;
-  font-weight: bold;
+  font-size: 1.5em;
   color: white;
 }
 
@@ -54,4 +56,29 @@ ul {
   width: 400px;
   border: 1px solid #6e6e6e;
   background-color: #333;
+}
+
+.score-box p {
+  text-align: center;
+  color: #898989;
+}
+
+.score-box-sum {
+  padding-left: 30px;
+  padding-right: 10px;
+}
+
+.score-box-getMGP {
+  padding-left: 15px;
+  padding-right: 40px;
+}
+
+li {
+  text-align: right;
+  color: #ccb665;
+}
+
+.score-box-getMGP li {
+  text-align: right;
+  color: #fff;
 }
