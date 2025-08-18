@@ -17,7 +17,7 @@ body {
   background-color: white;
 }
 
-/**************** ここまで共通 ****************/
+/**************** 説明文 ****************/
 
 .description h1 {
   font-size: 30px;
@@ -26,15 +26,113 @@ body {
 
 .description {
   padding-left: 10px;
+  padding-bottom: 20px;
 }
+
+/**************** タイトル ****************/
+
+.section-title {
+  text-align: center;
+  font-size: 1.5em;
+  background-color: #333;
+  color: #ccb665;
+  font-family: serif;
+}
+
+/**************** ボックス全体 ****************/
 
 .container {
   display: flex;
   justify-content: center;
   gap: 10px;
-  padding: 40px 0px;
+  padding: 0px 0px 40px;
   margin: 0 auto;
+  background-color: #333;
 }
+
+.box {
+  width: 400px;
+  background-color: #333;
+}
+
+/**************** 左ボックス ****************/
+
+.box-left {
+  width: 300px;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cactpot-container {
+  display: grid;
+  grid-template-areas:
+    "top-left top top"
+    "left grid grid"
+    "left grid grid";
+  grid-template-columns: 60px 1fr;
+  grid-template-rows: 40px 1fr;
+  gap: 10px;
+  width: 100%;
+  max-width: 350px; /* 最大幅を調整 */
+}
+
+.cactpot-grid {
+  grid-area: grid;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.cell {
+  width: 100%;
+  padding-bottom: 100%; /* 幅に対して高さを75%にし、正方形を維持 */
+  margin: auto; /* グリッドセル内で中央に配置 */
+  background-color: #898989;
+  border-radius: 50%; /* 円形にする */
+  border: 2px solid #ccb665;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.cell:hover {
+  background-color: #a99645;
+}
+
+.arrow-container-top {
+  grid-area: top;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.arrow-container-left {
+  grid-area: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding-right: 10px;
+}
+
+.arrow {
+  font-size: 2em;
+  color: #fff;
+  font-weight: bold;
+}
+
+.arrow-top-left {
+  grid-area: top-left;
+  font-size: 2em;
+  color: #fff;
+  font-weight: bold;
+  text-align: right;
+  padding-right: 10px;
+}
+
+/**************** 右ボックス ****************/
 
 ul {
   list-style: none;
@@ -52,12 +150,6 @@ ul {
   color: white;
 }
 
-.box {
-  width: 400px;
-  border: 1px solid #6e6e6e;
-  background-color: #333;
-}
-
 .score-box p {
   text-align: center;
   color: #898989;
@@ -73,7 +165,7 @@ ul {
   padding-right: 40px;
 }
 
-li {
+.score-box-sum li {
   text-align: right;
   color: #ccb665;
 }
